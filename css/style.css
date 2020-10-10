@@ -17,6 +17,8 @@ body {
   font: 18px/23px Times New roman, "GothaProLig", "DINNextCYR-Light", Arial, Tahoma, sans-serif;
   color: #fff;
   background: #000;
+  width: 1920px;
+  height: 1080px;
 }
 ol,
 ul, li {
@@ -303,12 +305,13 @@ input {
   top: calc(50% - 300px);
   animation-duration: 2s;
   animation-name: apearanceAnimation;
+  overflow: hidden;
 }
 
 @keyframes apearanceAnimation {
   0% {
-    top:0;
-    left:0;
+    top:50%;
+    left:50%;
     width:0%;
     height:0%;
   }
