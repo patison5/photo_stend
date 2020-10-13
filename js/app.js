@@ -1,4 +1,29 @@
 
+function flipCard () {
+   if (switching) {
+      return false
+   }
+   switching = true
+ 
+   $card.toggleClass('is-switched')
+
+   window.setTimeout(function () {
+      $card.children().children().toggleClass('is-active')
+      switching = false
+   }, cardTransitionTime / 2)
+}
+
+
+// var btn = document.getElementById('btn');
+// btn.addEventListener('click', function (e) {
+// 	e.preventDefault();
+
+// 	var card = document.getElementsByClassName('card')[0];
+// 	console.log(card)
+// 	card.style.display = "block";
+// })
+
+
 function getRandomTime (min, max) {
   return Math.random() * (max - min) + min;
 }
@@ -253,31 +278,48 @@ for (var i = 0; i < data.length; i++) {
 			"height": 350
 		}
 
+		// var cardBoxWrap = document.getElementsByClassName('cardBox-wrap')[0];
+		// cardBoxWrap.style.display = "flex";
+		// console.log(cardBoxWrap)
 
-		change("apearanceAnimation")
+		// var cardBox = cardBoxWrap.getElementsByClassName('cardBox')[0];
 
+		// cardBox.style.width  = videoRect.width + "px";
+		// cardBox.style.height = videoRect.height + "px";
+		// cardBox.style.transition = "all 1s ease-out 0.5s";
+
+		// var card = cardBox.getElementsByClassName('card')[0];
+
+		// cardBox.style.left 	 = "calc(50% - " + videoRect.width / 2 + 'px)';
+		// cardBox.style.top 	 = "calc(50% - " + videoRect.height / 2 + 'px)';
+		// cardBox.style.position = "absolute";
+
+		var card = document.getElementsByClassName('card')[0];
 		var cardBoxWrap = document.getElementsByClassName('cardBox-wrap')[0];
+
+		console.log(card)
+		card.style.display = "block";
 		cardBoxWrap.style.display = "block";
+
+		var cardFrontSide = cardBoxWrap.getElementsByClassName('card__side')[0];
+		// var cardFrontSideHeight = window.getComputedStyle(cardFrontSide).height;
+		var cardFrontSideHeight = $('.card__side').outerHeight() // фиксануть
+		cardBoxWrap.style.paddingTop = 540 - cardFrontSideHeight / 2 + 'px';
 		console.log(cardBoxWrap)
 
-		var cardBox = cardBoxWrap.getElementsByClassName('cardBox')[0];
-
-		cardBox.style.width  = videoRect.width + "px";
-		cardBox.style.height = videoRect.height + "px";
-
-		console.log(cardBox)
+		// console.log(cardBox)
 	})
 }
 
 
 
-var cardBox = document.getElementsByClassName('cardBox')[0];
-var card = cardBox.getElementsByClassName('card')[0];
+// var cardBox = document.getElementsByClassName('cardBox')[0];
+// var card = cardBox.getElementsByClassName('card')[0];
 
-card.addEventListener('click', function (e) {
-	e.preventDefault();
-	this.classList.toggle('is-flipped');
-})
+// card.addEventListener('click', function (e) {
+// 	e.preventDefault();
+// 	this.classList.toggle('is-flipped');
+// })
 
 
 
