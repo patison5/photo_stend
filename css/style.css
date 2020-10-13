@@ -381,3 +381,65 @@ input {
 
 
 
+#mlkeyboard {
+  /*display: block !important;*/
+}
+
+div#mlkeyboard ul {
+  background: #000;
+  padding: 30px 20px;
+}
+
+div#mlkeyboard ul li {
+  background: #272727;
+  border: 1px solid transparent;
+  width: calc(50px * 1.5);
+  height: calc(50px * 1.5);
+  line-height: calc(50px * 1.5);
+}
+
+div#mlkeyboard ul li.active,
+div#mlkeyboard ul li:hover {
+    background-color: #565656;
+    border-color: #565656;
+}
+
+div#mlkeyboard ul #mlkeyboard-backspace {
+  width: calc(66px * 1.5);
+}
+
+div#mlkeyboard ul #mlkeyboard-tab {
+  width: calc(65px * 1.5);
+}
+
+div#mlkeyboard ul #mlkeyboard-capslock {
+  width: calc(75px * 1.5);
+}
+
+div#mlkeyboard ul #mlkeyboard-return {
+  /*width: calc(76px * 1.5);*/
+  width: 142px;
+}
+
+div#mlkeyboard ul #mlkeyboard-left-shift {
+  /*width: calc(100px * 1.5);*/
+  width: 169px;
+}
+
+div#mlkeyboard ul #mlkeyboard-right-shift {
+  /*width: calc(100px * 1.5);*/
+  width: 169px;
+}
+
+div#mlkeyboard ul #mlkeyboard-space {
+  width: 1155px;
+}
+
+div#mlkeyboard ul {
+  width: 1158px;
+  /*width: calc(670px * 1.5);*/
+  /*width: auto;*/
+  height: auto;
+  overflow: hidden;
+  font-size: 17px;
+}
