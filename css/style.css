@@ -254,14 +254,14 @@ input {
   /*background: blue;*/
   /*background: rgba(255,255,255,.1);*/
   /*animation: splash 5s infinite;*/
-  background: url('../images/2.png') no-repeat center center;
+  /*background: url('../images/2.png') no-repeat center center;*/
   background-size: cover;
   filter: grayscale(100%);
   position: relative;
   overflow: hidden;
 }
 
-.cell__image:after {
+.cell__image-animated:after {
   content: '';
   position: absolute;
   top: 0;
@@ -271,7 +271,7 @@ input {
   animation: splash 5s infinite;
 }
 
-.cell__image:before {
+.cell__image-animated:before {
   content: '';
   position: absolute;
   top: 0;
@@ -297,12 +297,20 @@ input {
 
 
 
-.cardBox {
-  width: 700px;
-  height: 600px;
+.cardBox-wrap {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   position: absolute;
-  left: calc(50% - 350px);
-  top: calc(50% - 300px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  display: none;
+}
+
+.cardBox {
   animation-duration: 2s;
   animation-name: apearanceAnimation;
   overflow: hidden;
@@ -310,22 +318,17 @@ input {
 
 @keyframes apearanceAnimation {
   0% {
-    top:50%;
-    left:50%;
     width:0%;
     height:0%;
   }
   100% {
-    width: 700px;
-    height: 600px;
-    position: absolute;
-    left: calc(50% - 350px);
-    top: calc(50% - 300px);
+    width: 100%;
+    height: 100%;
   }
 }
 
 .card {
-  background: #fff;
+  background: #000;
   position: relative;
   width: 100%;
   height: 100%;
