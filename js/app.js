@@ -1,3 +1,4 @@
+var animationTime = 50000;
 
 function flipCard () {
    if (switching) {
@@ -276,6 +277,17 @@ var data = [
 ]
 
 
+function getServerData () {
+	let response = await fetch(url);
+
+	if (response.ok) { // если HTTP-статус в диапазоне 200-299
+	  // получаем тело ответа (см. про этот метод ниже)
+	  let json = await response.json();
+	} else {
+	  alert("Ошибка HTTP: " + response.status);
+	}
+}
+
 function getShuffeledData (data) {
 	var keys = [];
 	for (var i = 0; i < data.length; i++) keys.push(i)
@@ -291,7 +303,6 @@ function getShuffeledData (data) {
 	return result
 }
 
-console.log(getShuffeledData(data))
 
 function draw_card (id) {
 	var cellInfo = data[id];
@@ -349,7 +360,9 @@ function draw_card (id) {
 
 
 
-
+function hideBoxAnimated (imageCell) {
+	imageCell.style.opacity = "0"
+}
 
 function drawMainContent () {
 	var imageCellsArray = document.getElementsByClassName('cell__image');
@@ -360,6 +373,7 @@ function drawMainContent () {
 		var image = document.createElement('div');
 
 		// imageCell.style.background = "url('" + shuffledData[i].image + "') no-repeat center center";
+		image.style.backgroundColor = "none";
 		image.setAttribute('data-bg', shuffledData[i].image);
 		image.style.backgroundSize = "cover";
 		image.setAttribute('data-index', i);
@@ -372,15 +386,20 @@ function drawMainContent () {
 			draw_card(this.dataset.index);
 		})
 
+
+		imageCell.style.opacity = "1"
+		setTimeout(hideBoxAnimated.bind(null, imageCell), animationTime - 1000);
+
 		imageCell.innerHTML = "";
 		imageCell.appendChild(image)
 	}
 
 	var lazyLoadInstance = new LazyLoad({
 	  callback_loaded: (el) => {
-	  	var time = getRandomTime(0, 2)*1000;
+	  	var time = getRandomTime(0, 1)*2000;
 	  	setTimeout(function (e) {
 	  		el.classList.add("cell__image-animated")
+	  		el.style.opacity = "1";
 	  	}, time)
 	  }
 	});
@@ -394,7 +413,7 @@ drawMainContent()
 setInterval(function (e) {
 	console.log('fuck')
 	drawMainContent();
-}, 10000)
+}, animationTime)
 
 
 

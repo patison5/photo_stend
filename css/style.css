@@ -19,6 +19,7 @@ body {
   background: #000;
   width: 1920px;
   height: 1080px;
+  overflow: hidden;
 }
 ol,
 ul, li {
@@ -274,15 +275,19 @@ input {
   filter: grayscale(100%);
   position: relative;
   overflow: hidden;
+  transition: all 1s ease-in-out;
 }
 
 .cell__image .c-img {
   filter: grayscale(100%);
+  background: none;
   position: relative;
   overflow: hidden;
   display: block;
   height: 100%;
   width: 100%;
+  opacity: 0;
+  transition: all 1s ease-in-out;
 }
 
 .cell__image-animated:after {
@@ -292,7 +297,7 @@ input {
   left: 0;
   right: 0;
   bottom: 0;
-  animation: splash 5s infinite;
+  /*animation: splash 5s infinite;*/
 }
 
 .cell__image-animated:before {
