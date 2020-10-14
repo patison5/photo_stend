@@ -87,6 +87,7 @@ input {
   border-radius: 50px;
   overflow: hidden;
   height: 57px;
+  position: relative;
 }
 
 .search {
@@ -99,7 +100,19 @@ input {
   /*color: rgba(62,62,62,1);*/
   color: #fff;
   font-size: 24px;
-  padding-left: 50px;
+  padding-left: 65px;
+  /*position: relative;*/
+}
+
+.search__wraper:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 57px;
+  height: 57px;
+  display: block;
+  background: url('../images/lp.png') no-repeat center center;
 }
 
 .search__input {
@@ -112,6 +125,7 @@ input {
   justify-content: center;
   align-items: center;
   color: #fff;
+  position: relative;
 }
 
 
@@ -360,16 +374,22 @@ input {
 }
 .card {
    margin: 2rem auto;
-   max-width: 350px;
+   max-width: 1000px;
 }
 .card__side {
    padding: 1em;
    border-radius: 5px;
    color: white;
-   background-color: #ff4136;
+   /*background-color: #ff4136;*/
+   background: #000;
+   /*position: relative;*/
 }
 .card__side--back {
-   background-color: #0074d9;
+   /*background-color: #0074d9;*/
+}
+
+.card__side--front {
+  background: #000;
 }
 
 .card {
@@ -386,14 +406,47 @@ input {
   bottom: 0;
   display: none;
 }
-.card img {
+.card img,
+.card video {
   max-width: 100%;
   max-height: 100%;
   display: inline-block;
 }
 
+.card h2 {
+  width: 100%;
+  display: block;
+  text-align: left;
+  color: #fff;
+  margin: 20px 0;
+}
 
+.card__side .close {
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border: 4px solid #000;
+  border-radius: 50%;
+}
 
+.close:before, .close:after {
+  position: absolute;
+  left: 18px;
+  content: ' ';
+  height: 33px;
+  top: 4px;
+  width: 5px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
 
 
 

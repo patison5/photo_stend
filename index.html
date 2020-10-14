@@ -14,10 +14,10 @@
 	<div class="wraper">
 		<div class="header">
 			<div class="search__wraper">
-				<input type="text" class="search" placeholder="искать">
+				<input type="text" class="search" placeholder="искать" id="search_input-js">
 			</div>
 
-			<span class="search__input">Искать</span>
+			<span class="search__input" id="search_btn-js">Искать</span>
 		</div>
 
 		<div class="content main">
@@ -161,18 +161,11 @@
 
 		<div class="content searching">
 			<div class="searching-info">
-				<span class="return_back">< назад</span>
+				<span class="return_back" id="return_back-js">< назад</span>
 				<p class="searching-text" id="searching-text-js">По вашему запросу найдено 2 Овсенникова Ольга</p>
 			</div>
 
-			<div class="searching-grid">
-				<div class="searching-box"></div>
-				<div class="searching-box"></div>
-				<div class="searching-box"></div>
-				<div class="searching-box"></div>
-				<div class="searching-box"></div>
-				<div class="searching-box"></div>
-			</div>
+			<div class="searching-grid"></div>
 		</div>
 	</div>
 
@@ -194,9 +187,8 @@
 	<div class="cardBox-wrap">
 		<div class="card js-card">
 		  <div class="card__wrapper">
-		    <div class="card__side is-active">
-		      <img src="images/1.png" alt="">
-		      <h1>FRONT</h1>
+		    <div class="card__side card__side--front is-active">
+		    	<!-- <video src="videos/test.mp4" width="1000" height="562.5"></video> -->
 		    </div>
 		    <div class="card__side card__side--back">
 		      <img src="images/2.png" alt="">

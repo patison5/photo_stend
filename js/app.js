@@ -14,325 +14,435 @@ function flipCard () {
 }
 
 
-// var btn = document.getElementById('btn');
-// btn.addEventListener('click', function (e) {
-// 	e.preventDefault();
-
-// 	var card = document.getElementsByClassName('card')[0];
-// 	console.log(card)
-// 	card.style.display = "block";
-// })
-
-
 function getRandomTime (min, max) {
   return Math.random() * (max - min) + min;
 }
 
-function findKeyframesRule(rule) {
-    // gather all stylesheets into an array
-    var ss = document.styleSheets;
 
-    console.log(ss)
-    
-    // loop through the stylesheets
-    for (var i = 0; i < ss.length; ++i) {
-        
-        // loop through all the rules
-        for (var j = 0; j < ss[i].cssRules.length; ++j) {
-            
-            // find the -webkit-keyframe rule whose name matches our passed over parameter and return that rule
-            if ((ss[i].cssRules[j].type == window.CSSRule.WEBKIT_KEYFRAMES_RULE || ss[i].cssRules[j].type == window.CSSRule.KEYFRAMES_RULE) && ss[i].cssRules[j].name == rule)
-                return ss[i].cssRules[j];
-        }
-    }
-    
-    // rule not found
-    return null;
-}
-
-// remove old keyframes and add new ones
-function change(anim)
-{
-    // find our -webkit-keyframe rule
-  var keyframes = findKeyframesRule(anim);
-
-  console.log('change')
-    
-  if (keyframes !== null) {
-    // remove the existing 0% and 100% rules
-    keyframes.deleteRule("0%");
-    keyframes.deleteRule("100%");
-    
-    // create new 0% and 100% rules with random numbers
-    keyframes.appendRule("0% { -moz-transform: rotate("+360+"deg); -webkit-transform: rotate("+360+"deg); }");
-    keyframes.appendRule("100% { -moz-transform: rotate("+360+"deg); -webkit-transform: rotate("+360+"deg); }");
-    console.log(keyframes);
-    // assign the animation to our element (which will cause the animation to run)
-    		/*document.getElementById('box').style.WebkitAnimationName = anim;
-    document.getElementById('box').style.MozAnimationName = anim;*/
-  }
-    
-}
 
 var data = [
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/1.png"
+		"image": "images/1.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/2.png"
+		"image": "images/2.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/1.png"
+		"image": "images/1.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/2.png"
+		"image": "images/2.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/1.png"
+		"image": "images/1.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/2.png"
+		"image": "images/2.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/1.png"
+		"image": "images/1.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/2.png"
+		"image": "images/2.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/1.png"
+		"image": "images/1.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/2.png"
+		"image": "images/2.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/1.png"
+		"image": "images/1.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/2.png"
+		"image": "images/2.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/1.png"
+		"image": "images/1.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/2.png"
+		"image": "images/2.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/1.png"
+		"image": "images/1.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/2.png"
+		"image": "images/2.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/1.png"
+		"image": "images/1.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/2.png"
+		"image": "images/2.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/1.png"
+		"image": "images/1.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/2.png"
+		"image": "images/2.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/1.png"
+		"image": "images/1.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/2.png"
+		"image": "images/2.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/1.png"
+		"image": "images/1.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/2.png"
+		"image": "images/2.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/1.png"
+		"image": "images/1.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/2.png"
+		"image": "images/2.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/1.png"
+		"image": "images/1.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/2.png"
+		"image": "images/2.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/1.png"
+		"image": "images/1.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/2.png"
+		"image": "images/2.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/1.png"
+		"image": "images/1.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/2.png"
+		"image": "images/2.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/1.png"
+		"image": "images/1.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/2.png"
+		"image": "images/2.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/1.png"
+		"image": "images/1.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/2.png"
+		"image": "images/2.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 		{
 		"title": "Елизавета Залупкина",
-		"image": "images/2.png"
+		"image": "images/2.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/1.png"
+		"image": "images/1.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/2.png"
+		"image": "images/2.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 		{
 		"title": "Елизавета Залупкина",
-		"image": "images/2.png"
+		"image": "images/2.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/1.png"
+		"image": "images/1.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	},
 	{
 		"title": "Елизавета Залупкина",
-		"image": "images/2.png"
+		"image": "images/2.png",
+		"video_src": "videos/test.mp4",
+		"video_type": "video/mp4"
 	}
 ]
 
 
-var imageCellsArray = document.getElementsByClassName('cell__image');
+function getShuffeledData (data) {
+	var keys = [];
+	for (var i = 0; i < data.length; i++) keys.push(i)
 
-for (var i = 0; i < data.length; i++) {
+	keys.sort(() => Math.random() - 0.5);
 
-	var imageCell = imageCellsArray[i];
-	// imageCell.style.background = "url('" + data[i].image + "') no-repeat center center";
-	imageCell.setAttribute('data-bg', data[i].image);
-	imageCell.style.backgroundSize = "cover";
-	// console.log(imageCell)
+	var result = [];
+	keys = keys.slice(0, 42);
 
-	imageCell.addEventListener('click', function (e) {
-		e.preventDefault();
+	for (var i = 0; i < keys.length; i++)
+		result.push(data[keys[i]])
 
-		// var video = document.createElement('video');
+	return result
+}
 
-		// video.src = 'https://www.youtube.com/watch?v=xl2Xx5YOKcI&ab_channel=JohnHammond';
-		// video.autoplay = false;
-		// video.addEventListener( "loadedmetadata", function (e) {
-		//     var width = this.videoWidth,
-		//         height = this.videoHeight;
+console.log(getShuffeledData(data))
 
-		//     console.log(width, height);
-		// }, false );
-		// console.log(video)
+function draw_card (id) {
+	var cellInfo = data[id];
 
-		// console.log(this)
+	var card = document.getElementsByClassName('card')[0];
+	var cardBoxWrap = document.getElementsByClassName('cardBox-wrap')[0];
 
-		var videoRect = {
-			"width": 550,
-			"height": 350
-		}
+	var cardFrontSide = cardBoxWrap.getElementsByClassName('card__side--front')[0];
 
-		// var cardBoxWrap = document.getElementsByClassName('cardBox-wrap')[0];
-		// cardBoxWrap.style.display = "flex";
-		// console.log(cardBoxWrap)
+	var videlem 	= document.createElement("video");
+	var sourceMP4 	= document.createElement("source"); 
+	var title 		= document.createElement('h2');
 
-		// var cardBox = cardBoxWrap.getElementsByClassName('cardBox')[0];
+	sourceMP4.type = cellInfo.video_type;
+	sourceMP4.src  = cellInfo.video_src;
 
-		// cardBox.style.width  = videoRect.width + "px";
-		// cardBox.style.height = videoRect.height + "px";
-		// cardBox.style.transition = "all 1s ease-out 0.5s";
+	videlem.autoplay = true;
+	videlem.setAttribute('controls', "");
+	videlem.appendChild(sourceMP4);
 
-		// var card = cardBox.getElementsByClassName('card')[0];
+	title.innerHTML = cellInfo.title;
 
-		// cardBox.style.left 	 = "calc(50% - " + videoRect.width / 2 + 'px)';
-		// cardBox.style.top 	 = "calc(50% - " + videoRect.height / 2 + 'px)';
-		// cardBox.style.position = "absolute";
+	cardFrontSide.innerHTML = "";
+	cardFrontSide.appendChild(videlem);
+	cardFrontSide.appendChild(title);
 
-		var card = document.getElementsByClassName('card')[0];
-		var cardBoxWrap = document.getElementsByClassName('cardBox-wrap')[0];
+	var closeBtn = document.createElement('div');
+	closeBtn.classList.add('close');
+	cardFrontSide.appendChild(closeBtn);
 
-		console.log(card)
-		card.style.display = "block";
+	videlem.addEventListener( "loadedmetadata", function (e) {
+	    var width  = this.videoWidth,
+	        height = this.videoHeight;
+
+	    console.log(width, height);
+
+	    card.style.display = "block";
 		cardBoxWrap.style.display = "block";
 
-		var cardFrontSide = cardBoxWrap.getElementsByClassName('card__side')[0];
-		// var cardFrontSideHeight = window.getComputedStyle(cardFrontSide).height;
-		var cardFrontSideHeight = $('.card__side').outerHeight() // фиксануть
-		cardBoxWrap.style.paddingTop = 540 - cardFrontSideHeight / 2 + 'px';
-		console.log(cardBoxWrap)
+	    var cardFrontSideHeight1 = window.getComputedStyle(cardFrontSide).height;
+		var cardFrontSideHeight2 = $('.card__side').outerHeight() // фиксануть
+		cardBoxWrap.style.paddingTop = 540 - cardFrontSideHeight2 / 2 + 'px';
+		console.log(parseFloat(cardFrontSideHeight1))
+		console.log(cardFrontSideHeight2)
 
-		// console.log(cardBox)
+	}, false );
+
+	closeBtn.addEventListener('click', function (e) {
+		e.preventDefault();
+
+		card.style.display = "none";
+		cardBoxWrap.style.display = "none";
 	})
 }
 
 
 
-// var cardBox = document.getElementsByClassName('cardBox')[0];
-// var card = cardBox.getElementsByClassName('card')[0];
-
-// card.addEventListener('click', function (e) {
-// 	e.preventDefault();
-// 	this.classList.toggle('is-flipped');
-// })
 
 
+function drawMainContent () {
+	var imageCellsArray = document.getElementsByClassName('cell__image');
+	var shuffledData = getShuffeledData(data);
+
+	for (var i = 0; i < shuffledData.length; i++) {
+		var imageCell = imageCellsArray[i];
+		// imageCell.style.background = "url('" + shuffledData[i].image + "') no-repeat center center";
+		imageCell.setAttribute('data-bg', shuffledData[i].image);
+		imageCell.style.backgroundSize = "cover";
+		imageCell.setAttribute('data-index', i);
+
+		imageCell.addEventListener('click', function (e) {
+			e.preventDefault();
+
+			draw_card(this.dataset.index);
+		})
+	}
+
+	var lazyLoadInstance = new LazyLoad({
+	  callback_loaded: (el) => {
+	  	var time = getRandomTime(0, 2)*1000;
+	  	setTimeout(function (e) {
+	  		el.classList.add("cell__image-animated")
+	  	}, time)
+	  }
+	});
+
+	lazyLoadInstance.update();
+}
+
+// drawMainContent()
+
+
+setInterval(function (e) {
+	console.log('fuck')
+	drawMainContent();
+}, 2000)
 
 
 
-var lazyLoadInstance = new LazyLoad({
-  callback_loaded: (el)=>{
-  	var time = getRandomTime(0, 3)*1000;
-  	setTimeout(function (e) {
-  		el.classList.add("cell__image-animated")
-  	}, time)
-  }
-});
 
+
+
+
+var searchBTN = document.getElementById('search_btn-js');
+searchBTN.addEventListener('click', function (e) {
+	e.preventDefault();
+
+	var searchInput = document.getElementById('search_input-js');
+	var num = 1;
+	var searchValue = searchInput.value;
+
+	var mainContent = document.getElementsByClassName('main')[0];
+	var searchContent = document.getElementsByClassName('searching')[0];
+
+	mainContent.style.display = "none";
+	searchContent.style.display = "block";
+
+	var searchingTextLabel = document.getElementById('searching-text-js');
+	searchingTextLabel.innerHTML = "По вашему запросу найдено " + num + " " + searchValue;
+
+	var searchingBox = document.createElement('div');
+	searchingBox.classList.add('searching-box');
+	searchingBox.style.background = "url('images/1.png') no-repeat center center";
+	searchingBox.style.backgroundSize = 'cover';
+	searchingBox.dataset.index = '1';
+
+	var searchingGrid = document.getElementsByClassName('searching-grid')[0];
+
+	searchingGrid.innerHTML = "";
+	searchingGrid.appendChild(searchingBox)
+
+
+	searchingBox.addEventListener('click', function (e) {
+		e.preventDefault();
+
+		draw_card(this.dataset.index);
+	})
+
+})
+
+
+
+var returnBtn = document.getElementById('return_back-js');
+returnBtn.addEventListener('click', function (e) {
+	e.preventDefault();
+
+	var mainContent = document.getElementsByClassName('main')[0];
+	var searchContent = document.getElementsByClassName('searching')[0];
+
+	mainContent.style.display = "block";
+	searchContent.style.display = "none";
+})
 
 
