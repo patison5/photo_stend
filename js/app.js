@@ -277,8 +277,8 @@ var data = [
 ]
 
 
-function getServerData () {
-	let response = await fetch(url);
+async function getServerData () {
+	let response = await fetch("getData.php");
 
 	if (response.ok) { // если HTTP-статус в диапазоне 200-299
 	  // получаем тело ответа (см. про этот метод ниже)
@@ -297,6 +297,8 @@ function getShuffeledData (data) {
 	var result = [];
 	keys = keys.slice(0, 42);
 
+	// var dat = getServerData();
+	
 	for (var i = 0; i < keys.length; i++)
 		result.push(data[keys[i]])
 
