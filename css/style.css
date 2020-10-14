@@ -360,7 +360,11 @@ input {
   }
 
 .card__side--back {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @keyframes rotate {
@@ -569,4 +573,9 @@ div#mlkeyboard ul {
 .searching-text {
   font-size: 24px;
   margin: 15px 0 25px;
+}
+
+.hero {
+  margin: 15px 0;
+  color: #fff;
 }

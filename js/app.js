@@ -20,274 +20,6 @@ function getRandomTime (min, max) {
 }
 
 
-
-var data = [
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/1.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/2.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/1.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/2.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/1.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/2.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/1.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/2.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/1.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/2.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/1.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/2.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/1.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/2.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/1.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/2.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/1.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/2.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/1.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/2.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/1.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/2.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/1.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/2.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/1.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/2.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/1.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/2.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/1.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/2.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/1.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/2.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/1.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/2.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/1.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/2.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-		{
-		"title": "Елизавета Залупкина",
-		"image": "images/2.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/1.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/2.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-		{
-		"title": "Елизавета Залупкина",
-		"image": "images/2.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/1.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	},
-	{
-		"title": "Елизавета Залупкина",
-		"image": "images/2.png",
-		"video_src": "videos/test.mp4",
-		"video_type": "video/mp4"
-	}
-]
-
-
-async function getServerData () {
-	let response = await fetch("getData.php");
-
-	if (response.ok) { // если HTTP-статус в диапазоне 200-299
-	  // получаем тело ответа (см. про этот метод ниже)
-	  let json = await response.json();
-	} else {
-	  alert("Ошибка HTTP: " + response.status);
-	}
-}
-
 function getShuffeledData (data) {
 	var keys = [];
 	for (var i = 0; i < data.length; i++) keys.push(i)
@@ -296,8 +28,6 @@ function getShuffeledData (data) {
 
 	var result = [];
 	keys = keys.slice(0, 42);
-
-	// var dat = getServerData();
 	
 	for (var i = 0; i < keys.length; i++)
 		result.push(data[keys[i]])
@@ -306,30 +36,52 @@ function getShuffeledData (data) {
 }
 
 
-function draw_card (id) {
+function draw_card (id, data) {
 	var cellInfo = data[id];
 
 	var card = document.getElementsByClassName('card')[0];
 	var cardBoxWrap = document.getElementsByClassName('cardBox-wrap')[0];
 
 	var cardFrontSide = cardBoxWrap.getElementsByClassName('card__side--front')[0];
+	var cardBackSide  = cardBoxWrap.getElementsByClassName('card__side--back')[0];
 
 	var videlem 	= document.createElement("video");
 	var sourceMP4 	= document.createElement("source"); 
-	var title 		= document.createElement('h2');
+	var speaker 	= document.createElement('h2');
+	var hero = document.createElement('p');
+	var city = document.createElement('p');
 
-	sourceMP4.type = cellInfo.video_type;
-	sourceMP4.src  = cellInfo.video_src;
+	// back
+	cardBackSide.innerHTML = "";
+
+	hero.innerHTML = cellInfo.hero;
+	hero.classList.add('hero');
+
+	city.innerHTML = cellInfo.city;
+	city.classList.add('city');
+
+	var backSideImageWrap = document.createElement('div')
+	var backSideImage = document.createElement('img');
+	backSideImage.src = cellInfo.image;
+	
+	backSideImageWrap.appendChild(backSideImage)
+	cardBackSide.appendChild(backSideImageWrap)
+	cardBackSide.appendChild(hero)
+	cardBackSide.appendChild(city)
+	// front
+
+	sourceMP4.type = "video/mp4";
+	sourceMP4.src  = cellInfo.video;
 
 	videlem.autoplay = true;
 	videlem.setAttribute('controls', "");
 	videlem.appendChild(sourceMP4);
 
-	title.innerHTML = cellInfo.title;
+	speaker.innerHTML = cellInfo.speaker;
 
 	cardFrontSide.innerHTML = "";
 	cardFrontSide.appendChild(videlem);
-	cardFrontSide.appendChild(title);
+	cardFrontSide.appendChild(speaker);
 
 	var closeBtn = document.createElement('div');
 	closeBtn.classList.add('close');
@@ -339,16 +91,14 @@ function draw_card (id) {
 	    var width  = this.videoWidth,
 	        height = this.videoHeight;
 
-	    console.log(width, height);
-
 	    card.style.display = "block";
 		cardBoxWrap.style.display = "block";
 
 	    var cardFrontSideHeight1 = window.getComputedStyle(cardFrontSide).height;
 		var cardFrontSideHeight2 = $('.card__side').outerHeight() // фиксануть
 		cardBoxWrap.style.paddingTop = 540 - cardFrontSideHeight2 / 2 + 'px';
-		console.log(parseFloat(cardFrontSideHeight1))
-		console.log(cardFrontSideHeight2)
+
+		cardBackSide.style.minHeight = cardFrontSideHeight2 + 'px';
 
 	}, false );
 
@@ -366,7 +116,20 @@ function hideBoxAnimated (imageCell) {
 	imageCell.style.opacity = "0"
 }
 
-function drawMainContent () {
+async function drawMainContent () {
+
+	let response = await fetch("get.php");
+	let data;
+
+	if (response.ok) { // если HTTP-статус в диапазоне 200-299
+	  // получаем тело ответа (см. про этот метод ниже)
+	  data = await response.json();
+	} else {
+	  alert("Ошибка HTTP: " + response.status);
+	  return;
+	}
+
+
 	var imageCellsArray = document.getElementsByClassName('cell__image');
 	var shuffledData = getShuffeledData(data);
 
@@ -385,7 +148,7 @@ function drawMainContent () {
 		image.addEventListener('click', function (e) {
 			e.preventDefault();
 
-			draw_card(this.dataset.index);
+			draw_card(this.dataset.index, data);
 		})
 
 
@@ -413,7 +176,6 @@ drawMainContent()
 
 
 setInterval(function (e) {
-	console.log('fuck')
 	drawMainContent();
 }, animationTime)
 
@@ -424,40 +186,67 @@ setInterval(function (e) {
 
 
 var searchBTN = document.getElementById('search_btn-js');
-searchBTN.addEventListener('click', function (e) {
+searchBTN.addEventListener('click', async function (e) {
 	e.preventDefault();
 
-	var searchInput = document.getElementById('search_input-js');
-	var num = 1;
-	var searchValue = searchInput.value;
+	let response = await fetch("get.php");
 
-	var mainContent = document.getElementsByClassName('main')[0];
-	var searchContent = document.getElementsByClassName('searching')[0];
+	if (response.ok) {
+		let data = await response.json();
 
-	mainContent.style.display = "none";
-	searchContent.style.display = "block";
+		var searchInput = document.getElementById('search_input-js');
+		var searchValue = searchInput.value;
 
-	var searchingTextLabel = document.getElementById('searching-text-js');
-	searchingTextLabel.innerHTML = "По вашему запросу найдено " + num + " " + searchValue;
+		var mainContent = document.getElementsByClassName('main')[0];
+		var searchContent = document.getElementsByClassName('searching')[0];
 
-	var searchingBox = document.createElement('div');
-	searchingBox.classList.add('searching-box');
-	searchingBox.style.background = "url('images/1.png') no-repeat center center";
-	searchingBox.style.backgroundSize = 'cover';
-	searchingBox.dataset.index = '1';
+		var filteredData = data.filter(hero => hero.hero.toLowerCase().indexOf(searchValue.toLowerCase()) !== -1);
 
-	var searchingGrid = document.getElementsByClassName('searching-grid')[0];
+		mainContent.style.display = "none";
+		searchContent.style.display = "block";
 
-	searchingGrid.innerHTML = "";
-	searchingGrid.appendChild(searchingBox)
+		var searchingTextLabel = document.getElementById('searching-text-js');
+		searchingTextLabel.innerHTML = "По вашему запросу найдено " + filteredData.length + " " + searchValue;
+
+		var num = (filteredData.length <= 6) ? filteredData.length : 6;
+
+		var searchingGrid = document.getElementsByClassName('searching-grid')[0];	
+		searchingGrid.innerHTML = "";
+
+		for (var i = 0; i < num; i++) {
+			var searchingBox = document.createElement('div');
+			searchingBox.classList.add('searching-box');
+			searchingBox.style.background = "url('" + filteredData[i].image + "') no-repeat center center";
+			searchingBox.style.backgroundSize = 'cover';
+			searchingBox.dataset.index = '1';
+
+					
+			searchingGrid.appendChild(searchingBox)
+
+			searchingBox.addEventListener('click', async function (e) {
+				e.preventDefault();
+
+				let response = await fetch("get.php");
+
+				if (response.ok) {
+					let data = await response.json();
+
+					draw_card(this.dataset.index, data);
+				} else {
+				  alert("Ошибка HTTP: " + response.status);
+				  return;
+				}
+
+			})
+		}
 
 
-	searchingBox.addEventListener('click', function (e) {
-		e.preventDefault();
 
-		draw_card(this.dataset.index);
-	})
 
+	} else {
+	  alert("Ошибка HTTP: " + response.status);
+	  return;
+	}
 })
 
 
