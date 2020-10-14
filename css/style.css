@@ -276,6 +276,15 @@ input {
   overflow: hidden;
 }
 
+.cell__image .c-img {
+  filter: grayscale(100%);
+  position: relative;
+  overflow: hidden;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
 .cell__image-animated:after {
   content: '';
   position: absolute;

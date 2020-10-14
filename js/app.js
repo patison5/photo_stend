@@ -357,16 +357,23 @@ function drawMainContent () {
 
 	for (var i = 0; i < shuffledData.length; i++) {
 		var imageCell = imageCellsArray[i];
-		// imageCell.style.background = "url('" + shuffledData[i].image + "') no-repeat center center";
-		imageCell.setAttribute('data-bg', shuffledData[i].image);
-		imageCell.style.backgroundSize = "cover";
-		imageCell.setAttribute('data-index', i);
+		var image = document.createElement('div');
 
-		imageCell.addEventListener('click', function (e) {
+		// imageCell.style.background = "url('" + shuffledData[i].image + "') no-repeat center center";
+		image.setAttribute('data-bg', shuffledData[i].image);
+		image.style.backgroundSize = "cover";
+		image.setAttribute('data-index', i);
+		image.classList.add('lazy');
+		image.classList.add('c-img');
+
+		image.addEventListener('click', function (e) {
 			e.preventDefault();
 
 			draw_card(this.dataset.index);
 		})
+
+		imageCell.innerHTML = "";
+		imageCell.appendChild(image)
 	}
 
 	var lazyLoadInstance = new LazyLoad({
@@ -381,13 +388,13 @@ function drawMainContent () {
 	lazyLoadInstance.update();
 }
 
-// drawMainContent()
+drawMainContent()
 
 
 setInterval(function (e) {
 	console.log('fuck')
 	drawMainContent();
-}, 2000)
+}, 10000)
 
 
 
