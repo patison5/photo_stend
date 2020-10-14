@@ -1,4 +1,5 @@
 var animationTime = 50000;
+var serverRoute = "get.php";
 
 function flipCard () {
    if (switching) {
@@ -63,7 +64,7 @@ function draw_card (id, data) {
 	var backSideImageWrap = document.createElement('div')
 	var backSideImage = document.createElement('img');
 	backSideImage.src = cellInfo.image;
-	
+
 	backSideImageWrap.appendChild(backSideImage)
 	cardBackSide.appendChild(backSideImageWrap)
 	cardBackSide.appendChild(hero)
@@ -226,7 +227,7 @@ searchBTN.addEventListener('click', async function (e) {
 			searchingBox.addEventListener('click', async function (e) {
 				e.preventDefault();
 
-				let response = await fetch("get.php");
+				let response = await fetch(serverRoute);
 
 				if (response.ok) {
 					let data = await response.json();
