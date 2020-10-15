@@ -1,7 +1,8 @@
-var animationTime = 50000;
+var animationTime = 5*60*1000;
 var screensaverApearanceTime = 2*60*1000;
 var screensaverAnimationTime = 1000;
 var serverRoute = "get.php";
+var serverRouteAssets = "";
 
 var timer = setTimeout(function(){ showScreenSaver() }, screensaverApearanceTime);
 var apearanceTimer;
@@ -53,6 +54,7 @@ function draw_card (id, data) {
 	var speaker 	= document.createElement('h2');
 	var hero = document.createElement('p');
 	var city = document.createElement('p');
+	var videoDescWrap = document.createElement('div');
 
 	// back
 	cardBackSide.innerHTML = "";
@@ -60,31 +62,38 @@ function draw_card (id, data) {
 	hero.innerHTML = cellInfo.hero;
 	hero.classList.add('hero');
 
-	city.innerHTML = cellInfo.city;
-	city.classList.add('city');
-
 	var backSideImageWrap = document.createElement('div')
 	var backSideImage = document.createElement('img');
-	backSideImage.src = cellInfo.image;
+	backSideImage.src = serverRouteAssets + cellInfo.image;
+	backSideImage.height  = 540;
 
 	backSideImageWrap.appendChild(backSideImage)
 	cardBackSide.appendChild(backSideImageWrap)
 	cardBackSide.appendChild(hero)
-	cardBackSide.appendChild(city)
-	// front
 
+	// front
 	sourceMP4.type = "video/mp4";
-	sourceMP4.src  = cellInfo.video;
+	sourceMP4.src  = serverRouteAssets + cellInfo.video;
+
 
 	videlem.autoplay = true;
-	videlem.setAttribute('controls', "");
+	videlem.height  = 540;
+	// videlem.setAttribute('controls', "");
 	videlem.appendChild(sourceMP4);
 
+	videoDescWrap.classList.add('videoDescWrap')
 	speaker.innerHTML = cellInfo.speaker;
+	city.innerHTML = cellInfo.city;
+	city.classList.add('city');
 
 	cardFrontSide.innerHTML = "";
+
+	videoDescWrap.appendChild(speaker);
+	videoDescWrap.appendChild(city);
+
+
 	cardFrontSide.appendChild(videlem);
-	cardFrontSide.appendChild(speaker);
+	cardFrontSide.appendChild(videoDescWrap);
 
 	var closeBtn = document.createElement('div');
 	closeBtn.classList.add('close');
@@ -121,7 +130,7 @@ function hideBoxAnimated (imageCell) {
 
 async function drawMainContent () {
 
-	let response = await fetch("get.php");
+	let response = await fetch(serverRoute);
 	let data;
 
 	if (response.ok) { // если HTTP-статус в диапазоне 200-299
@@ -142,16 +151,20 @@ async function drawMainContent () {
 
 		// imageCell.style.background = "url('" + shuffledData[i].image + "') no-repeat center center";
 		image.style.backgroundColor = "none";
-		image.setAttribute('data-bg', shuffledData[i].image);
+		image.setAttribute('data-bg', serverRouteAssets + shuffledData[i].image);
 		image.style.backgroundSize = "cover";
 		image.setAttribute('data-index', i);
 		image.classList.add('lazy');
 		image.classList.add('c-img');
 
+
 		image.addEventListener('click', function (e) {
 			e.preventDefault();
-
 			draw_card(this.dataset.index, data);
+		})
+
+		imageCell.addEventListener('click', function (e) {
+			console.log(this)
 		})
 
 
@@ -219,7 +232,7 @@ searchBTN.addEventListener('click', async function (e) {
 		for (var i = 0; i < num; i++) {
 			var searchingBox = document.createElement('div');
 			searchingBox.classList.add('searching-box');
-			searchingBox.style.background = "url('" + filteredData[i].image + "') no-repeat center center";
+			searchingBox.style.background = "url('" + serverRouteAssets + filteredData[i].image + "') no-repeat center center";
 			searchingBox.style.backgroundSize = 'cover';
 			searchingBox.dataset.index = '1';
 
@@ -228,18 +241,7 @@ searchBTN.addEventListener('click', async function (e) {
 
 			searchingBox.addEventListener('click', async function (e) {
 				e.preventDefault();
-
-				let response = await fetch(serverRoute);
-
-				if (response.ok) {
-					let data = await response.json();
-
-					draw_card(this.dataset.index, data);
-				} else {
-				  alert("Ошибка HTTP: " + response.status);
-				  return;
-				}
-
+				draw_card(this.dataset.index, data);
 			})
 		}
 

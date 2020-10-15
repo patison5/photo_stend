@@ -346,12 +346,12 @@ input {
 }
 
 .is-switched .card__wrapper {
-    animation: rotate 2s linear both;
+    animation: rotate 2s linear both 5s;
   }
 
   .card__wrapper {
     transform-style: preserve-3d;
-    animation: rotate-inverse 2s linear both;
+    animation: rotate-inverse 2s linear both 5s;
   }
 
  .card__side {
@@ -448,10 +448,10 @@ input {
 
 .card__side .close {
   position: absolute;
-  right: -15px;
-  top: -15px;
-  width: 50px;
-  height: 50px;
+  right: 20px;
+  top: 20px;
+  width: 40px;
+  height: 40px;
   background: #fff;
   border: 4px solid #000;
   border-radius: 50%;
@@ -459,11 +459,11 @@ input {
 
 .close:before, .close:after {
   position: absolute;
-  left: 18px;
+  left: 14px;
   content: ' ';
-  height: 33px;
+  height: 24px;
   top: 4px;
-  width: 5px;
+  width: 4px;
   background-color: #333;
 }
 .close:before {
@@ -614,4 +614,22 @@ div#mlkeyboard ul {
   margin-bottom: 80px;
   text-align: center;
   line-height: 65px;
+}
+
+.city {
+  text-align: left;
+  color: #000;
+}
+
+.videoDescWrap {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255,255,255,.6);
+  padding: 25px;
+}
+.videoDescWrap h2 {
+  margin-top: 0;
+  color: #000;
 }
