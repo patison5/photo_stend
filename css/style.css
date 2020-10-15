@@ -579,3 +579,32 @@ div#mlkeyboard ul {
   margin: 15px 0;
   color: #fff;
 }
+
+
+
+
+.screensaver {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background: rgba(0,0,0,.85);
+  display: none;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+.screensaver-message {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  margin-bottom: 80px;
+  text-align: center;
+  line-height: 65px;
+}

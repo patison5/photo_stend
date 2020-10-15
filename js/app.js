@@ -1,5 +1,22 @@
 var animationTime = 50000;
+var screensaverApearanceTime = 2*601000;
+var screensaverAnimationTime = 1000;
 var serverRoute = "get.php";
+
+var timer = setTimeout(function(){ showScreenSaver() }, screensaverApearanceTime);
+var apearanceTimer;
+var hideTimer;
+
+function showScreenSaver () {
+	clearTimeout(hideTimer)
+	var screensaver = document.getElementById('screensaver-js');
+	screensaver.style.display = "flex";
+
+	apearanceTimer = setTimeout(function () {
+		var screensaver = document.getElementById('screensaver-js');
+		screensaver.style.opacity = "1";
+	}, screensaverAnimationTime)
+}
 
 function flipCard () {
    if (switching) {
@@ -263,4 +280,23 @@ returnBtn.addEventListener('click', function (e) {
 	searchContent.style.display = "none";
 })
 
+
+
+
+
+window.addEventListener('click', function (e) {
+	e.preventDefault();
+	clearTimeout(timer);
+	clearTimeout(apearanceTimer)
+
+	timer = setTimeout(function(){ showScreenSaver() }, screensaverApearanceTime);
+
+	var screensaver = document.getElementById('screensaver-js');
+	screensaver.style.opacity = "0";
+
+	hideTimer = setTimeout(function () {
+		var screensaver = document.getElementById('screensaver-js');
+		screensaver.style.display = "none";
+	}, screensaverAnimationTime)
+})
 
