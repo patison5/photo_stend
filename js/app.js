@@ -18,21 +18,6 @@ function showScreenSaver () {
 	}, screensaverAnimationTime)
 }
 
-function flipCard () {
-   if (switching) {
-      return false
-   }
-   switching = true
- 
-   $card.toggleClass('is-switched')
-
-   window.setTimeout(function () {
-      $card.children().children().toggleClass('is-active')
-      switching = false
-   }, cardTransitionTime / 2)
-}
-
-
 function getRandomTime (min, max) {
   return Math.random() * (max - min) + min;
 }
@@ -207,7 +192,7 @@ var searchBTN = document.getElementById('search_btn-js');
 searchBTN.addEventListener('click', async function (e) {
 	e.preventDefault();
 
-	let response = await fetch("get.php");
+	let response = await fetch(serverRoute);
 
 	if (response.ok) {
 		let data = await response.json();
