@@ -1,5 +1,5 @@
 var animationTime = 50000;
-var screensaverApearanceTime = 2*601000;
+var screensaverApearanceTime = 2*60*1000;
 var screensaverAnimationTime = 1000;
 var serverRoute = "get.php";
 
