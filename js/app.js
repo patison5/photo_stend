@@ -160,7 +160,7 @@ async function drawMainContent () {
 
 		image.addEventListener('click', function (e) {
 			e.preventDefault();
-			draw_card(this.dataset.index, data);
+			draw_card(this.dataset.index, shuffledData);
 		})
 
 		imageCell.addEventListener('click', function (e) {
@@ -234,20 +234,14 @@ searchBTN.addEventListener('click', async function (e) {
 			searchingBox.classList.add('searching-box');
 			searchingBox.style.background = "url('" + serverRouteAssets + filteredData[i].image + "') no-repeat center center";
 			searchingBox.style.backgroundSize = 'cover';
-			searchingBox.dataset.index = '1';
-
+			searchingBox.dataset.index = i;
 					
-			searchingGrid.appendChild(searchingBox)
-
+			searchingGrid.appendChild(searchingBox);
 			searchingBox.addEventListener('click', async function (e) {
 				e.preventDefault();
-				draw_card(this.dataset.index, data);
+				draw_card(this.dataset.index, filteredData);
 			})
 		}
-
-
-
-
 	} else {
 	  alert("Ошибка HTTP: " + response.status);
 	  return;
@@ -265,6 +259,7 @@ returnBtn.addEventListener('click', function (e) {
 
 	mainContent.style.display = "block";
 	searchContent.style.display = "none";
+	drawMainContent()
 })
 
 

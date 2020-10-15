@@ -346,12 +346,12 @@ input {
 }
 
 .is-switched .card__wrapper {
-    animation: rotate 2s linear both 5s;
+    animation: rotate 2s linear both 0.5s;
   }
 
   .card__wrapper {
     transform-style: preserve-3d;
-    animation: rotate-inverse 2s linear both 5s;
+    animation: rotate-inverse 2s linear both 0.5s;
   }
 
  .card__side {
@@ -583,8 +583,16 @@ div#mlkeyboard ul {
 }
 
 .hero {
-  margin: 15px 0;
+  /*margin: 15px 0; */
   color: #fff;
+  position: absolute;
+  bottom: 0;
+  padding: 15px;
+  background: rgba(255,255,255,0.7);
+  left: 0;
+  right: 0;
+  text-align: left;
+  color: #000;
 }
 
 
