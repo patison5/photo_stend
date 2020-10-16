@@ -119,6 +119,10 @@ function draw_card (id, data) {
 
 		card.style.display = "none";
 		cardBoxWrap.style.display = "none";
+		console.log(videlem)
+
+		videlem.pause();
+        videlem.currentTime = 0;
 	})
 }
 

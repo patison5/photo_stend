@@ -7,140 +7,140 @@
 				"hero": "Елизавета Залупкина",
 				"speaker": "Владислава Утыркина",
 				"image": "images/1.png",
-				"video": "videos/test.mp4",
+				"video": "videos/1.mp4",
 				"city": "Магадан"
 			},
 			{
 				"hero": "Елизавета Залупкина",
 				"speaker": "Владислава Утыркина",
 				"image": "images/2.png",
-				"video": "videos/test.mp4",
+				"video": "videos/1.mp4",
 				"city": "Магадан"
 			},
 			{
 				"hero": "Елизавета Залупкина",
 				"speaker": "Владислава Утыркина",
 				"image": "images/1.png",
-				"video": "videos/test.mp4",
+				"video": "videos/1.mp4",
 				"city": "Магадан"
 			},
 			{
 				"hero": "Елизавета Залупкина",
 				"speaker": "Владислава Утыркина",
 				"image": "images/2.png",
-				"video": "videos/test.mp4",
+				"video": "videos/1.mp4",
 				"city": "Магадан"
 			},
 			{
 				"hero": "Елизавета Залупкина",
 				"speaker": "Владислава Утыркина",
 				"image": "images/1.png",
-				"video": "videos/test.mp4",
+				"video": "videos/1.mp4",
 				"city": "Магадан"
 			},
 			{
 				"hero": "Елизавета Залупкина",
 				"speaker": "Владислава Утыркина",
 				"image": "images/2.png",
-				"video": "videos/test.mp4",
+				"video": "videos/1.mp4",
 				"city": "Магадан"
 			},
 			{
 				"hero": "Елизавета Залупкина",
 				"speaker": "Владислава Утыркина",
 				"image": "images/1.png",
-				"video": "videos/test.mp4",
+				"video": "videos/1.mp4",
 				"city": "Магадан"
 			},
 			{
 				"hero": "Елизавета Залупкина",
 				"speaker": "Владислава Утыркина",
 				"image": "images/2.png",
-				"video": "videos/test.mp4",
+				"video": "videos/1.mp4",
 				"city": "Магадан"
 			},
 			{
 				"hero": "Елизавета Залупкина",
 				"speaker": "Владислава Утыркина",
 				"image": "images/1.png",
-				"video": "videos/test.mp4",
+				"video": "videos/1.mp4",
 				"city": "Магадан"
 			},
 			{
 				"hero": "Елизавета Залупкина",
 				"speaker": "Владислава Утыркина",
 				"image": "images/2.png",
-				"video": "videos/test.mp4",
+				"video": "videos/1.mp4",
 				"city": "Магадан"
 			},
 			{
 				"hero": "Елизавета Залупкина",
 				"speaker": "Владислава Утыркина",
 				"image": "images/1.png",
-				"video": "videos/test.mp4",
+				"video": "videos/1.mp4",
 				"city": "Магадан"
 			},
 			{
 				"hero": "Елизавета Залупкина",
 				"speaker": "Владислава Утыркина",
 				"image": "images/2.png",
-				"video": "videos/test.mp4",
+				"video": "videos/1.mp4",
 				"city": "Магадан"
 			},
 			{
 				"hero": "Елизавета Залупкина",
 				"speaker": "Владислава Утыркина",
 				"image": "images/1.png",
-				"video": "videos/test.mp4",
+				"video": "videos/1.mp4",
 				"city": "Магадан"
 			},
 			{
 				"hero": "Елизавета Залупкина",
 				"speaker": "Владислава Утыркина",
 				"image": "images/2.png",
-				"video": "videos/test.mp4",
+				"video": "videos/1.mp4",
 				"city": "Магадан"
 			},
 			{
 				"hero": "Елизавета Залупкина",
 				"speaker": "Владислава Утыркина",
 				"image": "images/1.png",
-				"video": "videos/test.mp4",
+				"video": "videos/1.mp4",
 				"city": "Магадан"
 			},
 			{
 				"hero": "Елизавета Залупкина",
 				"speaker": "Владислава Утыркина",
 				"image": "images/2.png",
-				"video": "videos/test.mp4",
+				"video": "videos/1.mp4",
 				"city": "Магадан"
 			},
 			{
 				"hero": "Елизавета Залупкина",
 				"speaker": "Владислава Утыркина",
 				"image": "images/1.png",
-				"video": "videos/test.mp4",
+				"video": "videos/1.mp4",
 				"city": "Магадан"
 			},
 			{
 				"hero": "Елизавета Залупкина",
 				"speaker": "Владислава Утыркина",
 				"image": "images/1.png",
-				"video": "videos/test.mp4",
+				"video": "videos/1.mp4",
 				"city": "Магадан"
 			},
 			{
 				"hero": "Елизавета Залупкина",
 				"speaker": "Владислава Утыркина",
 				"image": "images/1.png",
-				"video": "videos/test.mp4",
+				"video": "videos/1.mp4",
 				"city": "Магадан"
 			},
 			{
 				"hero": "Елизавета Залупкина",
 				"speaker": "Владислава Утыркина",
 				"image": "images/2.png",
-				"video": "videos/test.mp4",
+				"video": "videos/1.mp4",
 				"city": "Магадан"
 			},
 			{
